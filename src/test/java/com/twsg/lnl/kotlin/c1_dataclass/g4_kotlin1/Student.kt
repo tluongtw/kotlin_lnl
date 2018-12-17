@@ -5,6 +5,8 @@ package com.twsg.lnl.kotlin.c1_dataclass.g4_kotlin1
  */
 class Student(id: String, firstName: String, lastName: String) {
 
+    /* demonstrates creating property with initial value in class body */
+
     val id: String = id
 
     val firstName: String = firstName
@@ -12,7 +14,7 @@ class Student(id: String, firstName: String, lastName: String) {
     val lastName: String = lastName
 
     val fullName: String
-        get() = firstName + " " + lastName
+        get() = "$firstName $lastName"
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

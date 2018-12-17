@@ -35,6 +35,9 @@ public class PageStats {
         return clickCountByElement;
     }
 
+    /**
+     * Create a new instance of this with all properties set to the existing one except from url.
+     */
     public PageStats withUrl(String newUrl) {
         return new PageStats(
                 newUrl,

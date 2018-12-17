@@ -9,6 +9,10 @@ data class Student(
         val lastName: String
 ) {
 
+    /*
+     * computed property is not backed by a field (since it does not refer to "field")
+     */
+
     val fullName: String
         get() = "$firstName $lastName"
 

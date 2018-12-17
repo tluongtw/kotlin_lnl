@@ -14,6 +14,8 @@ class PageStatsTest {
     fun `copying with visitCount should return correct result`() {
         val stats = PageStats("www.google.com", 1000, HashMap())
 
+        // `copy` comes with data classes
+
         val incrementedStats = stats.copy(visitCount = stats.visitCount + 1000)
 
         assertNotSame(stats, incrementedStats)
